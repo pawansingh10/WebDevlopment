@@ -21,7 +21,74 @@ Keep you VS Code light-weight, with some suggestions and plugins.
 
 - Similarly there're lot of plugins for **CSS colors**
  
+---
+
+### 📝 Let's learn How to write code in VS Code Editor
+
+Create a folder and open it in VS Code<br>
+
+- **🪒Let's learn some of the ShortCuts ✂️**
+
+- **1. ctrl + shift + p** This is a pallet, It does so many things for you. This is like your immediate controlling Command Centre for VS Code.
+
+- **2. ctrl + P** faster way to move from one file to another without touching mouse
+
+- **3. ctrl + , comma** to open some of the setting file
+
+- **4. ctrl + ~ tilde** VS Code also provide you a terminal. So use it.
+
+- **5. ctrl + b** This actually toggles side bars and quite common to space on your code
+
+- **6. ctrl + w** to close open file
+
+- **7. ctrl + s** to save the file
+
+- **8. ctrl + x** cut
+
+- **9. ctrl + v** paste
+
+- **10. ctrl + z** undo
+
+- **11. ctrl + y** redo
+
+- **12. delete key** to delete the file
+  
+
+- **13. ctrl + plus/minus+-** to zoom up and zoom in   
 
 ---
 
-##
+| Windows 11 | MacOS |
+|------------|-------|
+| ctrl key | command key|
+| alt  key | option key|
+
+---
+
+### 🚣 How we navigate through the code?
+
+Coding proficiently means How quickly you can navigate through your keyboard.<br> That's interesting! <br>
+It's a skill in itself and comes over the year.<br>
+
+- **ctrl + left/right arrow key** can move you from line start or the end
+
+- **ctrl + shift + arrow key** you can also move one word at a time.
+
+- **alt + shift + down arrow key** copy line
+
+- **ctrl + x** delete the line
+
+- **alt + up/down arrow** exchange the line 1 to line 2 No need to copy cut paste
+
+- **alt + move the cursor by clicking** It will write on multiple lines simulataneously
+
+- **ctrl + d** to highlight the same word
+
+- **! + tab key** it will generate HTML boiler plate code
+
+- **tab key** does miracle in HTML code auto generation
+
+- **alt key** to replace mouse and curser each time to rename something   
+
+
+---
