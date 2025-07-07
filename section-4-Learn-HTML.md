@@ -82,3 +82,68 @@ There is a lot of ways How HTML is being rendered and is being used not just on 
 - **Web Browser** doesn't obey the rule like Spaces, new line in the html for that its own way of handling the line spaces, lines break.  
 
 ---
+
+### 🧀 Emmet, headings and block vs inline
+
+> Note :- You don't need to learn everything in HTML! In fact nobody knows  everything in HTML. You learn on the go, on the basis of requirement basis.
+
+- **HTML Docs** <br>
+[MDN HTML](https://developer.mozilla.org/en-US/docs/Web/HTML/Guides/Content_categories) <br>
+[HTML html w3schools](https://www.w3schools.com/html/)
+
+- **[Emmet](https://emmet.io/)** : It used to be a plugin which need to be install exteranlly in the Sublime Text, but VS Code gives you by default So no need to install.<br>
+    Emmet (formerly Zen Coding) is a set of plug-ins for text editors that allows for high-speed coding and editing in HTML, XML, XSLT, and other structured code formats via content assist.<br>
+    This is an essential toolkit, something which professional people used to generate HTML and all CSS really fast.<br>
+    It gives you syntax abbrevation. [Emmet Docs Syntax](https://docs.emmet.io/abbreviations/syntax/)
+
+```html
+    div>u>ul>li tab
+```
+
+  - **Emmet Lorem** : Generate dummy words <br>
+```html
+   h1>lorem5 tab
+   h2>lorem10 tab
+   h4>lorem16 tab
+   p>lorem150 tab
+```
+
+- **Headings** Heading is not about the size that h1 is big h2 is small, h3 is smaller....h6 is smallest.You can change the font-size,style,color etc by CSS. It's about relevance important which is more
+    important.
+  - **h1** Most important heading on your page
+  - **h2** Little bit less of an important
+  - **h3** Little less 
+  - **h4** little little less
+  - **h5** little little little less
+  - **h6** least important heading of your page
+
+**p** paragraph is just a text content.<br>
+This is how usually a web page is designed.<br>
+
+**Images** : ```<img src="./folder_name/image.jpg" alt="">``` <br> Here there is no closing tag for images.
+
+**Link** : anchor tag to link other pages/websites ```<a href="https://x.com"> Go to X </a>``` <br>
+
+There is a terminology, How everything is being known like ```<h2>Lorem ipsum dolor sit amet.</h2>``` this whole thing is known as **Element** including the starting tag ```<h1>```, content ```Lorem ipsum dolor sit amet.``` and end tag ```</h2>``` So this is an h1 element.
+
+**```<a href="https://x.com"> Go to X </a>```**, Here ```href=""```,```src="" alt=""``` is an **attribute**, these're properties of a tag, which has some **name** like href,src,alt etc etc and we pass **value** to them. Some of tags have property, some of them they don't have. We can addtionaly provide them.<br>
+
+```html
+  <h1 title="Hello">Lorem ipsum dolor sit amet consectetur.</h1>
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+---
