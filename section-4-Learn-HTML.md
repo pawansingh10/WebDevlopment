@@ -307,6 +307,109 @@ But What data? You need to precisely address<br>
 
 ## 🍂 Building a semantic HTML Page
 
+We have seen enough of the basics, theoritical part of HTML like creating h1 tag, paragraph, some of the list elements and tables and forms.<br>
+Now It's time to build an entire webpage, not the perfect realistic but very close to it along with the semantic of HTML.<br>
 
+**Semantics of HTML** is really an interesting topics in which so much of amazing stuffs can happen around that.<br>
+Sematic actually guides your HTML page that **How the content should be structured and wrapped around?**<br>
+There used to a time when everything wrapped around just under div and now no longer this is the case.<br>
+Now we actually have better sematic tags so that we can wrap around entire page and It can do so much justice to the screen readers and other places where 
+your data can be consumed. <br>
+
+Semantic is all about How your web page looks, accessible and nice for the screen reader as well as It serves a good purpose in HTML in general.<br>
+
+- **meta tags** : These are metadata information about your webpage, how it looks like on the webport, what character set you're using UTF-8 or UTF-16 or Chinese characters, Japanese Characters, Hindi Characters then UTF structure changed.
+```
+UTF = "Unicode Transformation Format"
+It is a standard for encoding characters in electronic communication and is widely used in computing and web development.
+UTF includes various encodings such as UTF-8, UTF-16, and UTF-32, each designed to handle different character sets and requirements.
+UTF-8, in particular, is the most popular encoding and is backwards compatible with ASCII.
+```
+  
+```html
+        <!DOCTYPE html>
+        <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Document</title>
+        </head>
+```
+- Sometimes you will see you load some of the scripts as well ```<script></script>```, these scripts are nothing but script which load some script external javascript or some code. It's very common thing.
+
+- Apart from this sometimes you even load your CSS as well, ```<style></style>```, if you want to have style contents. [Play CDN](http://v3.tailwindcss.com/docs/installation/play-cdn)  
+
+- There are 2 attributes which are very common class="" and id="" used with any element, known as global attribute.<br>
+[click here](https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Global_attributes)<br>
+There are so many global attributes that can be injected in any of the element. These are very very helpful for the CSS.
+
+- There used be a way designing a web page using div but now we have semantics
+```html
+    <body>
+        <div class="header">
+            <h1>Headings</h1>
+        </div>
+        
+        <div class="footer">
+            This is a footer
+        </div>
+    </body>
+```
+- HTML 5 gives us sematic tags, says hey these sematics tags are availble and try to go ahead and document or struture your website.<br>
+[Sematics](https://developer.mozilla.org/en-US/docs/Glossary/Semantics)<br>
+Again these sematics are container tags and they just seperate out your content little bit nothing much they don't do anything on their own. we have many of them like mentioned below<br>
+ - ```<header> </header>```,```<footer> </footer>```,```<nav> </nav>```,```<section> </section>```,```<main> </main>```,```<article> </article>```<br>
+   ```<summary> </summary>``` ```<figure> </figure>```
+
+```html
+    <body>
+        <header>
+            <h1>Headings</h1>
+        </header>
+    
+        <footer>
+            This is a footer
+        </footer>
+    </body>
+```
+- Sometime people actually wrap these heading inside another group ```<hgroup></hgroup>```<br> It is just a heading group tag.<br>
+From this
+```html
+<body>
+    <header>
+        <h1>Learn to creates</h1>
+        <h2>You can learn with us and build your own website.</h2>
+    </header>
+</body>
+```
+<br>
+To this
+
+```html
+  <header>
+        <hgroup>
+            <h1>Learn to creates</h1>
+            <h2>You can learn with us and build your own website.</h2>
+        </hgroup>
+  </header>
+```
+[Click here,To learn more about hgroup](https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/hgroup)
+
+
+> **We can auto indent our code in VS Code using the plugin called Prettier, install it and configure it from setting if it doesn't work.**
+
+
+> **BTW, It does really mean that if you're putting any content at the top it will always remain at top. CSS is perfectly capable of moving any content
+from top to bottom, It can change the position.**
+
+- **```<nav></nav>```** nav element is navigation bar, usually are made of unordered lists. 
+
+- We have seen here ```<header></header>```,```<hgroup></hgroup>```,```<article></article>```,```<time></time>```,```<section></section>```,
+  ```<code></code>```,```<footer></footer>```,```<address></section>```
+
+- We can use special character symbol like copywrite etc etc using '&' to generate special character and thanks to charset="UTF-8" which provide this stlying and encoding.
+```html
+<p>&copy; developer 2025</p>
+```
 
 ---
