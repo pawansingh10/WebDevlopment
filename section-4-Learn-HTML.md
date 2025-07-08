@@ -310,7 +310,7 @@ But What data? You need to precisely address<br>
 We have seen enough of the basics, theoritical part of HTML like creating h1 tag, paragraph, some of the list elements and tables and forms.<br>
 Now It's time to build an entire webpage, not the perfect realistic but very close to it along with the semantic of HTML.<br>
 
-**Semantics of HTML** is really an interesting topics in which so much of amazing stuffs can happen around that.<br>
+- 🍎 **Semantics of HTML** is really an interesting topics in which so much of amazing stuffs can happen around that.<br>
 Sematic actually guides your HTML page that **How the content should be structured and wrapped around?**<br>
 There used to a time when everything wrapped around just under div and now no longer this is the case.<br>
 Now we actually have better sematic tags so that we can wrap around entire page and It can do so much justice to the screen readers and other places where 
@@ -318,7 +318,9 @@ your data can be consumed. <br>
 
 Semantic is all about How your web page looks, accessible and nice for the screen reader as well as It serves a good purpose in HTML in general.<br>
 
-- **meta tags** : These are metadata information about your webpage, how it looks like on the webport, what character set you're using UTF-8 or UTF-16 or Chinese characters, Japanese Characters, Hindi Characters then UTF structure changed.
+> **Semantic HTML elements discribe its meaning to both the browser and the developer**
+
+- 🍏 **meta tags** : These are metadata information about your webpage, how it looks like on the webport, what character set you're using UTF-8 or UTF-16 or Chinese characters, Japanese Characters, Hindi Characters then UTF structure changed.
 ```
 UTF = "Unicode Transformation Format"
 It is a standard for encoding characters in electronic communication and is widely used in computing and web development.
@@ -335,15 +337,15 @@ UTF-8, in particular, is the most popular encoding and is backwards compatible w
             <title>Document</title>
         </head>
 ```
-- Sometimes you will see you load some of the scripts as well ```<script></script>```, these scripts are nothing but script which load some script external javascript or some code. It's very common thing.
+- 🥭 Sometimes you will see you load some of the scripts as well ```<script></script>```, these scripts are nothing but script which load some script external javascript or some code. It's very common thing.
 
-- Apart from this sometimes you even load your CSS as well, ```<style></style>```, if you want to have style contents. [Play CDN](http://v3.tailwindcss.com/docs/installation/play-cdn)  
+- 🍇 Apart from this sometimes you even load your CSS as well, ```<style></style>```, if you want to have style contents. [Play CDN](http://v3.tailwindcss.com/docs/installation/play-cdn)  
 
-- There are 2 attributes which are very common class="" and id="" used with any element, known as global attribute.<br>
+- 🍋 There are 2 attributes which are very common class="" and id="" used with any element, known as global attribute.<br>
 [click here](https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Global_attributes)<br>
 There are so many global attributes that can be injected in any of the element. These are very very helpful for the CSS.
 
-- There used be a way designing a web page using div but now we have semantics
+- 🍉 There used to be a way designing a web page using div but now we have semantics
 ```html
     <body>
         <div class="header">
@@ -355,7 +357,7 @@ There are so many global attributes that can be injected in any of the element. 
         </div>
     </body>
 ```
-- HTML 5 gives us sematic tags, says hey these sematics tags are availble and try to go ahead and document or struture your website.<br>
+- 🍍 HTML 5 gives us sematic tags, says hey these sematics tags are availble and try to go ahead and document or struture your website.<br>
 [Sematics](https://developer.mozilla.org/en-US/docs/Glossary/Semantics)<br>
 Again these sematics are container tags and they just seperate out your content little bit nothing much they don't do anything on their own. we have many of them like mentioned below<br>
  - ```<header> </header>```,```<footer> </footer>```,```<nav> </nav>```,```<section> </section>```,```<main> </main>```,```<article> </article>```<br>
@@ -372,7 +374,7 @@ Again these sematics are container tags and they just seperate out your content 
         </footer>
     </body>
 ```
-- Sometime people actually wrap these heading inside another group ```<hgroup></hgroup>```<br> It is just a heading group tag.<br>
+- 🍈 Sometime people actually wrap these heading inside another group ```<hgroup></hgroup>```<br> It is just a heading group tag.<br>
 From this
 ```html
 <body>
@@ -407,9 +409,94 @@ from top to bottom, It can change the position.**
 - We have seen here ```<header></header>```,```<hgroup></hgroup>```,```<article></article>```,```<time></time>```,```<section></section>```,
   ```<code></code>```,```<footer></footer>```,```<address></section>```
 
-- We can use special character symbol like copywrite etc etc using '&' to generate special character and thanks to charset="UTF-8" which provide this stlying and encoding.
+- 🍋‍🟩 We can use special character symbol like copywrite etc etc using '&' to generate special character and thanks to charset="UTF-8" which provide this stlying and encoding.
 ```html
 <p>&copy; developer 2025</p>
 ```
 
 ---
+
+## 🍂 Multimedia and ARIA in HTML
+
+Some of the powers of HTML do have is, especially **Semantics**, adding some of the **Media content** and some of the **ARIA labels**<br>
+
+Here, we will see doc, websites from where we can learn.<br>
+
+### 📂 Multimedia
+
+Media like images, videos to add in our web page we can have different different ways and there are different different attributes are there<br>
+
+- 📷 **Images in HTML** : There're two ways of handling the images **1. image tag** ```<img src="" alt=""/>```, and **figure tag** ```<figure></figure>```, ```<figcaption></figcaption>```<br>
+```html
+<img src="./images/programming.png"
+     title="programming"
+     width="200"
+     alt="profile photo"/>
+```
+
+```html
+<figure>
+      <img
+        src="images/programming.png"
+        width="200px"
+        alt="Elephant at sunset"
+      />
+      <figcaption>An elephant at sunset</figcaption>
+</figure>
+```
+
+- 📽️ **Videos in HTML** : ```<video src="" width="400px" </video> ```
+
+```html
+<video
+      src="./images/demo.mkv"
+      width="400px"
+      controls
+      controlslist="nofullscreen nodownload noremoteplayback noplaybackrate foobar"
+    ></video>
+
+```
+  
+[Control of Video](https://wicg.github.io/controls-list/explainer.html)<br>
+Some of these controls actually can be injected only with the JavaScript. Some of them work, some of them not, So we can actually control a lot of things with programming.<br>
+
+- 📽️ **Audio in HTML** : ```<audio src=""></audio>```
+
+```html
+<figure>
+  <figcaption>Listen to the T-Rex:</figcaption>
+  <audio controls src="/shared-assets/audio/t-rex-roar.mp3"></audio>
+  <a href="/shared-assets/audio/t-rex-roar.mp3"> Download audio </a>
+</figure>
+```
+
+---
+
+### 🏷️ ARIA Tags
+
+[**ARIA**](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA) = Accessible Rich Internet Application<br>
+
+ARIA tags are totally associated with the accessibility.<br>
+
+So, If you make any web application very rich so that any device can actually operate and served that application.<br>
+ARIA is a research field in their own, there are engineers who are dedicated just for ARIA so that application is accessible on all platforms.<br>
+It's a separate job in itself, we can't do all of this but we will try to see little bit of it.
+
+- ARIA labels
+- ARIA attributes
+
+It expects that every element that you're putting up here needs to have some kind of role, some kind of ARIA label so that all the readers can actually read.<br>
+
+Whenever you're making any application which is centric towards banking application or government websites, this is part where we come and study about it.<br>
+
+Can somebody access the entire website just with a keyboard?<br>
+can somebody access it through the speech recognition softwares?<br>
+and much more things 
+
+[Accessibility](https://developer.mozilla.org/en-US/docs/Web/Accessibility/Guides)
+
+> **You don't need to go much about it, There is so much about more to learn about ARIA** Still in HTML workshops people study. As of now no need to go in such depth.
+
+
+---
+
