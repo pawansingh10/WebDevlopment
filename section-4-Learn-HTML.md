@@ -83,15 +83,15 @@ There is a lot of ways How HTML is being rendered and is being used not just on 
 
 ---
 
-### 🧀 Emmet, headings and block vs inline
+## 🍂 Emmet, headings and block vs inline
 
 > Note :- You don't need to learn everything in HTML! In fact nobody knows  everything in HTML. You learn on the go, on the basis of requirement basis.
 
-- **HTML Docs** <br>
+- 🌺 **HTML Docs** <br>
 [MDN HTML](https://developer.mozilla.org/en-US/docs/Web/HTML/Guides/Content_categories) <br>
 [HTML html w3schools](https://www.w3schools.com/html/)
 
-- **[Emmet](https://emmet.io/)** : It used to be a plugin which need to be install exteranlly in the Sublime Text, but VS Code gives you by default So no need to install.<br>
+- 🌺 **[Emmet](https://emmet.io/)** : It used to be a plugin which need to be install exteranlly in the Sublime Text, but VS Code gives you by default So no need to install.<br>
     Emmet (formerly Zen Coding) is a set of plug-ins for text editors that allows for high-speed coding and editing in HTML, XML, XSLT, and other structured code formats via content assist.<br>
     This is an essential toolkit, something which professional people used to generate HTML and all CSS really fast.<br>
     It gives you syntax abbrevation. [Emmet Docs Syntax](https://docs.emmet.io/abbreviations/syntax/)
@@ -108,7 +108,7 @@ There is a lot of ways How HTML is being rendered and is being used not just on 
    p>lorem150 tab
 ```
 
-- **Headings** Heading is not about the size that h1 is big h2 is small, h3 is smaller....h6 is smallest.You can change the font-size,style,color etc by CSS. It's about relevance important which is more
+- 🌺 **Headings** Heading is not about the size that h1 is big h2 is small, h3 is smaller....h6 is smallest.You can change the font-size,style,color etc by CSS. It's about relevance important which is more
     important.
   - **h1** Most important heading on your page
   - **h2** Little bit less of an important
@@ -120,29 +120,192 @@ There is a lot of ways How HTML is being rendered and is being used not just on 
 **p** paragraph is just a text content.<br>
 This is how usually a web page is designed.<br>
 
-**Images** : ```<img src="./folder_name/image.jpg" alt="">``` <br> Here there is no closing tag for images.
+- 🌺 **Images** : ```<img src="./folder_name/image.jpg" alt="">``` <br> Here there is no closing tag for images.<br>
+```html
+<img src="./images/programming.png" width="300px" height="" alt="">
+```
 
-**Link** : anchor tag to link other pages/websites ```<a href="https://x.com"> Go to X </a>``` <br>
+- 🌺 **Link** : anchor tag to link other pages/websites ```<a href="https://x.com"> Go to X </a>``` <br>
+```htmml
+    <a href="https://x.com">Go to X</a>
+    <a href="mailto:infyme@proton.me">Mail to</a>
+    <a href="tel:+919876543210">Mobile</a>
+    <a href="./index.html">Go to index</a>
+```
 
 There is a terminology, How everything is being known like ```<h2>Lorem ipsum dolor sit amet.</h2>``` this whole thing is known as **Element** including the starting tag ```<h1>```, content ```Lorem ipsum dolor sit amet.``` and end tag ```</h2>``` So this is an h1 element.
 
-**```<a href="https://x.com"> Go to X </a>```**, Here ```href=""```,```src="" alt=""``` is an **attribute**, these're properties of a tag, which has some **name** like href,src,alt etc etc and we pass **value** to them. Some of tags have property, some of them they don't have. We can addtionaly provide them.<br>
+**```<a href="https://x.com"> Go to X </a>```**, Here ```href=""```,```src="" alt=""``` is an **attribute**, these're properties of a tag, which has some **name** like href,src,alt etc etc and we pass **value** to them.<br>
+
+- 🌺 Some of tags have property, some of them they don't have. We can addtionaly provide them.<br>
 
 ```html
   <h1 title="Hello">Lorem ipsum dolor sit amet consectetur.</h1>
+
+  <h1 title="New tool tips">Lorem ipsum dolor sit amet consectetur.</h1>
 ```
 
+- 🌺 **lists** : Lists are of 2 types, 
+ - **1. UnOrdered list**```<ul></ul>``` means, List is there but order is not that much important. example : Buying Grossary items, order doesn't matter.
+ - **2. Ordered List**```<ol></ol>```  means, Importance of order is there. example : Giving cooking instructions, order really matters.
+```html
+<ul>
+       <li>Mango</li>
+       <li>Apple</li>
+       <li>Orange</li>
+</ul>
 
 
+<ol>
+      <li>Read</li>
+      <li>Understand</li>
+      <li>Write</li>
+</ol>
+```
+
+- 🌺 **Concept of Block Element and Inline Element** :
+  - **Block Level Element** : The name itself suggests Block means It's a block.
+  - **Inline Elements** : Inline means I will come within line the line.
+  - How to figure out difference between them?
+    - Block level element goes from left to right <br> It takes the entire block of your browser that's your block level element<br>
+    Example : ```<h1 title="Hello">Lorem ipsum dolor sit amet consectetur.</h1> ```
+    - Inline element,on the other hand they goes within the line, they don't consume or claim the territory of the entire block<br>
+    Example : ``` <img src="./images/programming.png" width="300px" height="" alt="">```
+
+ - You can go on the webpage and inspect which element is block element and hich element is inline by hovering over the element.
+
+- 🌺 **```<div></div>```**, In the HTML, there is also known as **Container** and **div** is considered as container, div is just a wraper, a box.It doesn't do anything it's just a container.
+```html
+<div>
+        <h1>Block level elements</h1>
+        <ul>
+            <li>heading h1 to h6</li> 
+            <li>ol, li</li> 
+            <li>ul, li</li>     
+            <li>p</li> 
+        </ul>
+    </div>
+    <div>
+        <h1>Inline elements</h1>
+        <ul>
+            <li>a tags</li>
+            <li>img</li>
+            <li>strong</li>
+            <li>em</li>
+        </ul>
+    </div>   
+```
+
+ - 🌺 **```<strong> </strong>```** strong tag and **```<b> </b>```** bold tag
+```html
+<p>Lorem ipsum <strong>dolor</strong> sit amet.</p>
+<p>Lorem ipsum <b>dolor</b> sit amet.</p>
+```
+Both makes no difference when you see, But the difference between the understandability of the screen readers and the accessibilty of the website.<br>
+When you say bold, It's just a bold. It doesn't do anything extra. but when you say strong that means there is some strong emphasis with this particular keyword, there is some importance of it.<br>
+That's what the HTML is about. Laying down where the importance of the figure is/some word.
+
+- **```<em></em>```** Itallic,here em is there should be emphasis on this word when screen reader read the content **```<i></i>```** Itallic, i is just a fancy nature of displaying visual hierarchy<br>
+
+This is why all these strong tag, emphasis tag, img tag, a tag etc are inline tag, It doesn't consume end to end, doesn't create new block on its own. It does all these changes within ther place within inline.
 
 
+---
 
 
+## 🍂 Tables and Forms in HTML
 
+We have seen How we can actually display the data in HTML, some of the common ways are tags like h1,h2,h3,h4,h5,h6,p,ul,ol etc and these arethe most common way to display the data.<br>
+But these are not the only one, there can be so much more like keyboarf input, code, adress etc etc.<br>
+You don't have to learn each of the tag, but you learn them on the go as you need them you find them and figure them out.<br>
 
+Apart from this, There are two major way to display the data :- 
+**1. How to Display tabular data** : The world is filled uo with the tabular data so we need a way how to display tables. In fact in earlier days in research work Tabular data were most important element bcuz that's
+   how the findings were being printed on the research papers.<br>
+   We will see how the table element is still one of the most important and most useed element.
 
+**2. How to take data from the users?** : Important part of HTML that How we can take data from the user and that's only one way using the **forms**<br>
+   **Forms** Yes, we have variety of forms<br>
+   forms for HTML<br>
+   forms for Email<br>'
+   forms for password,files,colors,date pickers, so much of them<br>
+   
 
+### ☑️Tables
 
+> **Read the docs, this is how you will learn with yourself without spoon feeding tutorial videos and save much of your time.**
+
+[**mdn HTML Docs**](https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/search)
+
+- **How the table work?** : The tabular data is acutally super simple to work on with. It's really simple<br>
+create a ```<table></table>``` table inside the table there is a hierarchy that you put the content inside it ```<tr></tr>``` table row and now in each of the table row we can put up some of the ```<td></td>```table data.
+
+```html
+<table>
+        <tr>
+            <td>Column 1</td>
+            <td>Column 2</td>
+            <td>Column 3</td>
+        </tr>
+    </table>
+    <table>
+        <tr>
+            <th>Name</th>
+            <th>Email</th>
+            <th>DOB</th>
+        </tr>
+        <tr>
+            <td>Pawan</td>
+            <td>pawan@email.com</td>
+            <td>01-01-2010</td>
+        </tr>
+        <tr>
+            <td>Pawan</td>
+            <td>pawan@email.com</td>
+            <td>01-01-2010</td>
+        </tr>
+    </table>
+```
+---
+
+### ☑️ Take data from User
+
+This is where forms come into the picture.<br>
+the form on its own does nothing, It is just means of saying Hey, that we're collecting a form, we're collecting some data.<br>
+But What data? You need to precisely address<br>
+
+- Here, We can see multiple input forms for taking input from the user <br>
+  - input text
+  - input email
+  - input password
+  - input checkbox
+  - input radio
+  - textarea
+  - submit button
+  - reset button
+  - select option
+  - input date/month/year
+  - input file
+  - input color
+
+- **```<input type="">```**, Put cursor between double quotes and press ctrl + space, auto suggestions will come.
+
+- **place holder**
+```html
+            <label for="email">
+                Email:<input placeholder="abc@email.com" type="email" name="email" id="">
+            </label>
+
+            <label for="password">
+                password:<input placeholder="enter your password" type="password" name="password">
+            </label>
+```
+
+- There is so much to learn about the form, the best way to learn is on the go.
+  
+---
+
+## 🍂 Building a semantic HTML Page
 
 
 
