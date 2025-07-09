@@ -254,7 +254,7 @@ This is so common that people are even arguing and commenting to the Web3 author
 
 > See what's happening, analyze it and then understand it!
 
- There are 2 browser content box models that means how much space the element is going to take on your web browser.
+ There are 2 browser content box models that means how much space the element is going to take on your web browser.<br>
 1️⃣ The default behavior of browser is **Content Box**, this is going to change<br>
     
 2️⃣ Another is **Border Box** Every single frameworks library, they actually reset to Border Box from the default bahaviour of the browser.<br>
@@ -267,13 +267,5 @@ Inline elements takes as much space as it is required by the content in the elem
 
 - 🍊 **Block Elements**
 On the other hand Block element which consumes the entire space on left to right. You can restrict it to be little bit shorter or bigger but nobody can takes other space. It's whole consume by it.
-
-
-
-
-
-
-
-
 
 ---
