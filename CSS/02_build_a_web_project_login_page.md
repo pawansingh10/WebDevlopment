@@ -25,7 +25,7 @@ Login Button<br>
 
 ---
 
-### 💳 Masterclass on CSS Selectors
+## 💳 Masterclass on CSS Selectors
 
 - **Selectors** : Selectors is the ability to select any element on the webpage.<br>
 There are varierty of ways of doing so. This a rabbit whole you can go as much as depth as you wish. But in professional environment we won't work like that.<br>
@@ -120,12 +120,120 @@ So here 1st div is parent div and the 2nd div is child of div 1.<br>
 We never prefer to write these value as red, green, blue or white etc bcuz every browser has different ways of rendering the webpage some of them have different red shed while others
 have different and we don't want inconsisting in branding that's why preferred value is hex color code
 
-- **4. Attribute Selectors** :
+- **5. Attribute Selectors** :
    - Attribute selectors are interesting, you just have to name what is the element and what kind of attribute you are targeting
-   - You can optionally enter what kind of value in that attribute
+   - You can optionally enter what kind of value in that attribute. 
+```html
+<style>
+    input[type="text"] {
+      border : 2px solid #21a2c9;
+     }
+</style>
+
+<input type="text" name="" id="" placeholder="Enter text" />
+```
+> 80-90% of time These 4 selectors **1. Universal Selector**, **2. Type Selectors**, **3. Class Selectors**, **4. Id Selectors**and **5. Attribute Selectors** we majorily used throughout our career.
 
 | Paranthesis | Braces | Square Bracket |
 |-------------|--------|----------------|
 |     ( )     |  { }   |     [ ]        |
-  
+
+#### These are the Advance CSS Selectors
+
+- **6. Descendant Selectors** :
+  - In order to target descendant selector, It's little weird. Read it as ``` all the p which are decendant of article```
+```html
+<style>
+    article p {
+      font-size: italic;
+      background-color: #1a1a1a;
+      color: white;
+      padding: 10px;
+     }
+</style>
+
+<input type="text" name="" id="" placeholder="Enter text" />
+```
+
+- **7. Child Selectors** :
+   - It's actually nice, Child != Descendant
+
+```html
+<style>
+    div > p {
+      list-style-type: square;
+      background-color: #1a1a1a;
+     }
+</style>
+
+<div>
+    <p>child</p>
+    <p>child</p>
+    <section>
+         <p>descendant</p>
+    </section>
+    <p>child</p>
+</div>
+```
+
+- **8. Adjacent Siblings Selectors** :
+   - read h1 + p as all the p who are adjacent siblings of h1
+```html
+<style>
+    h1 + p {
+      font-weight: bold;
+      background-color: #1a1a1a;
+     }
+</style>
+```
+- **9. General Siblings Selectors** :
+   -  all the p which are general siblinga of h2
+```html
+<style>
+    h2 ~ p {
+      font-weight: bold;
+      background-color: #1a1a1a;
+     }
+</style>
+```
+- **10. Pseudo-class Selector** :
+   - We will use it quite alot
+   - A lot of HTML element properties, they have different behaviours when you select the input, different behaviour when you mouse hover it and
+     you can control all of these properties based on what element you are targetting.
+   - Common thing you're going to see is hover property, like We want to select all the a tags and we only want to implement the CSS whenever there is
+     a hover motion in action on that.   
+```html
+<style>
+    a:hover {
+      background-color: #1a1a1a;
+      text-decoration: none;
+      color: #1a1a1a;
+      padding: 5px;
+      margin: 4px;
+     }
+</style>
+```
+
+- **11. Pseudo-element Selector** :
+   - Pseudo-element Selectors are crazy altogether on another level.
+   - I want to select all the first letters in the all paragraphs
+```html
+<style>
+    p::first-letter {
+      font-weight: bold;
+      font-weight: bold;
+     }
+</style>
+```
+
+- **12. Grouping Selector** :
+   - 
+```html
+<style>
+    h1,h2,h3 {
+       color: #1a1a1a;
+     }
+</style>
+```
+
 ---
