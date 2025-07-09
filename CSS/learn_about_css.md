@@ -1,7 +1,7 @@
-# 🚀 Learn about CSS
+## 🚀 Learn about CSS
 
-## 📍The current state of CSS
- 
+### 📍The current state of CSS
+
  CSS =  Cascading Style Sheet<br>
  The whole idea of having the CSS is **to make your website beautiful** on the mobile, on the big screen(PCs), medium screen(ipad).
 
@@ -29,9 +29,7 @@
   
 - Let's so go through some of libraries and we will see how these days Applications are being built.
 
----
-
-## 🍎 CSS
+#### CSS
 
 - CSS =  Cascading Style Sheet, things which **make your website beautiful** <br>
 Example : Which makes you button Top-right corner, center, button of the page, stylings, colors and backgrounds all of these things is done through CSS.<br>
@@ -85,7 +83,7 @@ CSS is an art and there are artists, we don't want to be that artistic. We just 
 
 ---
 
-## 📍 You can write css at 3 places
+### 📍 You can write css at 3 places
 
 In initial days, every developer thinks that the ability to write css will make my website better, which is true. But It actually comes at third place before that - <br>
 
@@ -103,7 +101,7 @@ In initial days, every developer thinks that the ability to write css will make 
 
 - CSS stands for Cascading Style sheet, **Cascading** simply means the whole idea of flowing and giving you one style applied on the above element, it automatically cascaded to the below element as well. We will see how it works actually?
 
----
+
 
 ### 🚀 Ways of How we can actually style our element through CSS
 
