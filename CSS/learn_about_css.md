@@ -8,8 +8,7 @@
 
  There is a way How the CSS is written in a professional manner and how it should taught for the students who just getting started.<br>
 
- CSS is an art in itself. There're artist of the CSS available in the market like Youtube and other places. They really can nail down the designs, animations etc just kije what you see on somewhat like Apple
- website and other fancy websites which go crazy which we no need at the start.<br>
+ 💥CSS is an art in itself. There're artist of the CSS available in the market like Youtube and other places. They really can nail down the designs, animations etc just kije what you see on somewhat like Apple website and other fancy websites which go crazy which we no need at the start.<br>
 
  We will learn enough of the basics and foundations<br>
 
@@ -30,7 +29,7 @@
 
 ---
 
-## CSS
+## 🍎 CSS
 
 - CSS =  Cascading Style Sheet, things which **make your website beautiful** <br>
 Example : Which makes you button Top-right corner, center, button of the page, stylings, colors and backgrounds all of these things is done through CSS.<br>
@@ -38,23 +37,50 @@ Example : Which makes you button Top-right corner, center, button of the page, s
 - But you don't have to write these CSS absolultely manually. There're some piece of code that are given to you<br>
   Examples : Some Cards, Top Navigation bars, etc you just customized them the way you want. But ofcourse this also requires CSS skills where you want to place that at the top/botton/center whereever you want.
 
-- First unspoken Hero of these CSS libraries is **Bootstrap**, it's little bit dated now but still many websites which use that and this will give you enough of the idea that library is being used .
-  - Go to 
+- 🅱️**Bootstrap CSS** [Click Here](https://getbootstrap.com/)
+  - First unspoken Hero of these CSS libraries is **Bootstrap**, it's little bit dated now but still many websites which use that and this will give you enough of the idea that library is being used .
+  - Go to [**Bootstrap Doc**](https://getbootstrap.com/docs/5.3/getting-started/introduction/)
+  - Bootstrap look very similar on all of the website, there was one point in the web era, where almost every next website was bulit with the help of Bootstrap CSS.Although there are customizable facilities in that but Hey all of the button looks like same and there is nothing wrong in it, If it does the job. The functionality part you focusing more so in that case bootstrap works absolutely fine.
+
+- Ⓜ️ **Materialize CSS** [Click Here](https://materializecss.com/)
+
+- 🦜**Tailwind CSS** [Click Here](https://v3.tailwindcss.com/) Library but not exactly,It's Tailwind CSS
+  - It looks weird at first but then you're going to the speed of the ability of writing the code and containerizing the code so that it can be used at any other place and it looks exactly same.
+  - We will see this in details later on.
+  - It's weird first and you're going to hate writing so many classes.
+  - This also gives you components
+
+- ⏹️ **shadcn/ui** [Click Here](https://ui.shadcn.com/)
+  - These days getting popular, they not only give you components but they give you blocks as well. You can just copy paste this
+  - Charts, Tables
+  - Lots of Components - Dialogues, Show dialogues 
+
+- 🅰️ **Acerternity UI** [Click Here](https://ui.aceternity.com/)
+  - Components are just too much, like apple card, carusals
+
+- 🟧 **Magic UI** [Cick Here](https://magicui.design/)
+
+- 🟩 **daisyUI** [Cick Here](https://daisyui.com/)
+
+- ⏺️ **mui** [Cick Here](https://mui.com/)
+
+Most of them are free to use and some of them are being loved by the corporates, company buy them crazy and they give them their engineers, especially in professional environment that Hey, don't waste your time too much just make the page look decent and the basic thing like button why're you wasting so much time in buolding the button.
+Once you know how it works just focus on building application.
+
+- [**FlowBite**](https://flowbite.com/)
+- [**Ant Design**](https://ant.design/)
 
 
+> We will learn CSS, But do not get scared of the CSS. It looks scary and sometime it feels like it's too much when will I get away with it.
+
+CSS basics and foundation, there're solutions available they make the website decent enough and it does the job.
+We will learn all of it about CSS, styling of it, changing the background color, the position of it and even Tailwind CSS.<br>
+You will be able to build your own component, once you have enough the basics of building 4-5 your own components, you know how the components are being designed. Now you can take the existing components and modify them however you wish to bcuz now you know how to build the components.<br>
+
+CSS is an art and there are artists, we don't want to be that artistic. We just want to get our job done. We're more of a programming person.
 
 
-
-
-
-
-
-
-
-
-
-
-
+---
 
 
 
