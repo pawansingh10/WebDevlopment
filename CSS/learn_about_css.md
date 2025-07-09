@@ -1,4 +1,6 @@
 # 🚀 Learn about CSS
+
+## 📍The current state of CSS
  
  CSS =  Cascading Style Sheet<br>
  The whole idea of having the CSS is **to make your website beautiful** on the mobile, on the big screen(PCs), medium screen(ipad).
@@ -83,5 +85,85 @@ CSS is an art and there are artists, we don't want to be that artistic. We just 
 
 ---
 
+## 📍 You can write css at 3 places
 
+In initial days, every developer thinks that the ability to write css will make my website better, which is true. But It actually comes at third place before that - <br>
 
+1️⃣ **Fonts** : The more beautiful the font is on the website it totally changes the look, feel, theme of the enite website with just the font. Font concume majority of the spaces on the webpage.<br>
+
+2️⃣ **Images** : The more beautifully designed the images are and the more optimizelly and more with the idea of the flow are being designed and put on the website.
+
+3️⃣ **Components** : How good your button looks like, how good your lists look like, cards look like.
+
+> Whenever you designing website keep this in mind, you will be much professional in that game.
+
+- **What we're going to do in CSS?** : The whole job of CSS is just 2 things
+  - ✅ **Selecting the element**
+  - ✅  **Styling the element**
+
+- CSS stands for Cascading Style sheet, **Cascading** simply means the whole idea of flowing and giving you one style applied on the above element, it automatically cascaded to the below element as well. We will see how it works actually?
+
+---
+
+### 🚀 Ways of How we can actually style our element through CSS
+
+- 1️⃣ **1st way is Inline styling** : Inline styling means I want to style within the line **using global attributed known as style** This is exactly the approach which Tailwind also prefers.
+In any HTML element, there is a global attribute known as **style**<br>
+```html
+<h1 style="color: orangered">Lorem ipsum dolor sit amet.</h1>
+```
+
+This is the first way of How we can style the element.
+
+- 2️⃣ **2nd way is of Having an style being injected in the webpage** using **style tag** within the head tag.
+```html
+<style>
+      h2 {
+        color: brown;
+      }
+      p {
+        color: blue;
+      }
+    </style>
+```
+We can target multiple elements at the same time.
+```html
+<style>
+      h2,p {
+        color: brown;
+      }
+    </style>
+```
+Another way is **addition of attribute known as id and classes**
+- Id you can have as many as you wish technically but official guideline says you should have one id on the webpage, It should be unique to one element. while on the other hand classes can be as many as you want.
+- These attributes classes and Id doesn't do anything on its own. But what we can do once we have these class element is we can select those classes by dot (*) and ids by pound(#)
+
+```html
+<style>
+      .browntext {
+        color: brown;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 style="color: orangered">Lorem ipsum dolor sit amet.</h1>
+    <h2 class="browntext">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+    </h2>
+   </body>
+```
+
+- 3️⃣ **3rd way is to create a new .css file** : It is a good idea that you keep your styling absolutely seperate in a separate file. It makes document a little bit easier to manipulate and manage. There're advantages of it also there're disadvantages of it as well.
+
+Create a file style.css and select and style whatever elements you want.<br>
+But It does nothing bcuz this style.css file is separate file, index.html doesn't know about it.<br>
+So, let's inform index.html through link, Hey there is a style.css which want to style your elements in the start within head tag <br> 
+```html
+<link rel="stylesheet" href="style.css" />
+```
+
+We can have style inline```<h1 style="color: red">```, we can also have style injected through ```<style> </style>``` and we can also have external style.css file <br>
+All of these three can be happens at the same time. But here comes which of the styles take over power out of these 3.<br>
+Classes are more powerful, Ids are more powerful or the stying is more powerful.
+
+---
