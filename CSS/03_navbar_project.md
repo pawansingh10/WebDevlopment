@@ -53,3 +53,87 @@ Whenver you're learning somethings look for the errors, hunt it.<br>
 | **Junior Developers** have not seen enough so they took time to fix that's it.|
 
 ---
+
+> Learning can't be just by watching/consuming Tutorial Videos, You need to supplement it with little bit of reading official document and practice.
+
+## Twitter style navbar in CSS
+
+```html
+<style>
+    .nav2{
+            border: 2px Solid red;
+            background-color: #03643c;
+            width: 200px;
+            padding: 20px;
+        }
+        .nav2 ul{
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+        .nav2 li{
+            margin-bottom: 12px;
+        }
+        .nav2 a{
+            text-decoration: none;
+            color: white;
+            display: block;
+            padding: 10px;
+            width: 100%;
+        }
+        .nav2 a:hover{
+            background-color: #137e0a;
+        }
+        .nav2 .login-btn{
+            background-color: #048a2f;
+            border: none;
+            color: white;
+            width: 100%;
+            padding: 10px;
+            cursor: pointer;
+            border-radius: 5px;
+            /* margin-left: 7px; */
+        }
+        .nav2 .login-btn:hover{
+            background-color: #137e0a;
+            border: 1px solid white;
+        }
+</style>
+```
+
+## Dropdown navbars and positions
+
+Knowing the foundations and basics is good enough but eventually we will move to Tailwind/DaisyUI/Shascn etc which makes our life little bit easier.
+So that we can focus on building software, building the funtionality and not just UI upgradation part.<br>
+
+```html
+.nav3{
+            border: 2px solid red;
+            background-color: #45a2bb;
+        }
+        .nav3 ul{
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+        .nav3 a{
+            text-decoration: none;
+            color: white;
+            padding: 10px;
+            display: block;
+        }
+        .nav3 .dropdown-content{
+            display: none;
+            
+        }
+        .nav3 .dropdown:hover .dropdown-content{
+            display: block;
+            position: absolute;
+            background-color: #202929;
+            min-width: 150px;   
+        }
+```
+---
