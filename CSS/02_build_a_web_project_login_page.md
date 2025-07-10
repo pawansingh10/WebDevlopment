@@ -217,6 +217,7 @@ have different and we don't want inconsisting in branding that's why preferred v
 - **11. Pseudo-element Selector** :
    - Pseudo-element Selectors are crazy altogether on another level.
    - I want to select all the first letters in the all paragraphs
+
 ```html
 <style>
     p::first-letter {
@@ -227,7 +228,6 @@ have different and we don't want inconsisting in branding that's why preferred v
 ```
 
 - **12. Grouping Selector** :
-   - 
 ```html
 <style>
     h1,h2,h3 {
