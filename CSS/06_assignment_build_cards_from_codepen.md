@@ -12,4 +12,6 @@
     if you want to have 4 different pages that's also fine. Feel free to use flexbox or grid use wahtever make sense.
   - Look for a website know as card HTML CSS codepen [Codepen](https://codepen.io/tag/card)
   - Codepen actually is an environment which gives you HTMl CSS and they tags each project which're freely avaialble for you to work or take inspiration or even you code.
-  - 
+
+    <img width="1133" height="741" alt="image" src="https://github.com/user-attachments/assets/35dcdd05-51fb-4ce5-b737-51a2b22daf40" />
+
