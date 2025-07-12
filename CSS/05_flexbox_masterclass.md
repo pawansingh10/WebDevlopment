@@ -117,7 +117,7 @@ You don't need any other resourse outside this discussion.
 - Every conatiner gets a ```display: grid;``` without applying the property of display grid, it doesn't behave like a grid. but we're not using any other properties
   neither the template for rows nor template for column nothing like that. we will code them as we go along.<br>
   
-1 Basic Grid of 3X3<br>
+1. Basic Grid of 3X3 : You will will using this like anything 2X2 3X4 etc<br> 
 Here, we want rows to be 3 and columns to be 3. So we know that grid-template-column and grid-template-rows can achieve that and also we have seen repeat(3,1fr) property or 1fr 1fr,1fr.<br>
 a) Say Hi to ```<div class="grid-conatiner" style="grid-template-columns: repeat(3,1fr)" ></div>```<br>
 grid-template-rows: repeat(3, 100px); Hey, If it's repeat upto 3 columns each of the column should get 100px.<br>
@@ -143,8 +143,7 @@ grid-template-rows: repeat(3, 100px); Hey, If it's repeat upto 3 columns each of
       </div>
     </div>
 ```
-<br>
-2. Grid with different column size<br>
+2. Grid with different column size : You will also used this anything especially on mobile layout<br>
 Here, we want to apply grid to control columns, If we want to make second column big.<br>
 We can say Hey style, I want to control the column so grid-template-columns and provide fraction as we know exactly there are three of them so 1fr 2fr 1fr.
 This is usually know as Twitter style layout where we have 1fr 2fr 1fr, center one gets timeline, you can build so many of the social media just with this.
@@ -160,8 +159,7 @@ To put navigation bar, suggestion in the each sides and all the feed goes up in 
     </div>
 ```
 
-<br>
-3. Grid with Gaps<br>
+3. Grid with Gaps : Just meant to show gap is if you want to consume them<br>
 Here, we will be controlling the gap as well as provide the columns, not worry about row rows can be as it is.
 Hey style, I want to control the grid-template-columns, repeat for 3 of the columns 1 fraction each. and also we want to control gaps, already gaps are there because
 of margin property being applied on them. But we can control gap further. So put ```gap: 20px``` <br>
@@ -182,7 +180,7 @@ of margin property being applied on them. But we can control gap further. So put
     </div>
 ```
 <br>
-4. Grid item Placement<br>
+4. Grid item Placement : Used in Rare cases like Gallery, Blockpost, crazy cards or bento box<br>
 Here suppose we want 3 columns and each takes 1fr that's already we have see control it from grid container, 
 
 ```html
@@ -221,7 +219,7 @@ So Let's say add a style and grid-column, how many columns you're going to consu
       </div>
     </div>
 ```
-5. Grid Template Area<br>
+5. Grid Template Area : Shows you how much power you can have if you can define the architecture or layout of your page on top lavel, this can achieve nicely and it maintains the layout even on the smaller screen.<br>
 It's interesting, It's bit of a complex work but grid make it super easy to work with.<br>
 Here, we don't have 1,2,3 rather we have Header, Sidebar, Main Content and Footer. So, the Goal is Header usually takes from left to right, the whole element.<br>
 The sidebar usually takes one of the fraction and the main content takes bigger fraction abd footer also goes all the way from left to right.<br>
@@ -261,7 +259,7 @@ You have to be very precisely mentioning all these grid area, you can't just do 
     </div>
 
 ```
-6. Auto-fit and Minmax<br>
+6. Auto-fit and Minmax : They behave like flexwrap<br>
 This is bit of inspired by **Flexwrap**. This can be control by parent as well, go to the parent and inject style="grid-template-columns: repeat()"
 Till now, we're giving numbers like 3 columns each getting 1fr but What if we have no idea how many elements are going to come up? For that there is an option which say ```repeat(auto-fit, minmax(100px, 1fr))``` and it will automatically try to fit it but another property needs to be given for that is tell me what could be minmax size?
 Magic happens when if the space gets shrink and nobody is able to get min of 100px, that exactly the point they will pushed onto the next row and the next row also will have 100px and it will keep on going. Almost lika a flexwrap.
@@ -303,7 +301,7 @@ Again grid-template-columns: repeat(3,1fr);, now we have alignment and all of th
     </div>
 ```
 
-8. Nested Grid<br>
+8. Nested Grid : You may used this<br>
 We have grid container inside that we have further a grid container. inside that we have more elements 2.1 2.2 2.3 2.4 <br>
 First we have to see outer container as one grid<br>
 Then See the inner container as one grid under which we have elements 2.1 2.2 2.3 2.4
@@ -322,9 +320,17 @@ Then See the inner container as one grid under which we have elements 2.1 2.2 2.
     </div>
 ```
 
-9. Grid with Auto Rows<br>
+9. Grid with Auto Rows : rarely used<br>
 First repeat them into 3 columns so style="grid-template-columns: repeat(3,1fr)" now you can se is that one of the column is taking too much because it's having too much of content and bcuz grid is smart enough to actually don't push your layout  rather it's automatically trying to strech others columns so that they were equal height. This is good but you want to control the height as well. **Heights are being control as how much rows you're consuming.**<br>
 Another properties you can use is ```system="grid-auto-rows: minmax(100px,auto)"``` or ```system="grid-auto-columns"```, all we got to do is min max.
+
+- **Bento box design**, these days every cards look like these bento, which used to be lunchbox in japan. you will these pattern on apple website.
+
+> 🔴 **In the world of CSS, there is a never ending learning process, People spends 5-6 years more in just understanding each property and preparing a nice display**
+
+> 🟢 But the idea is not to go in hunt of learning everything at once, you don't need it. you will need whatever you need, figure it out and start building the project. That's the only best way to learn.
+
+> Once you are confident in building the outer layout, putting the content inside in it is no big deal. Everybody can do that.🙂
 
 ---
 
