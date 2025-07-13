@@ -78,7 +78,11 @@ You can modify your components as per your own wish
   </body>
 ```
 - Focus on funtionality part, It's not just Bootstrap, we have so many of the libraries and frameworks that we can work through.
+
+> This is enough of Basic overview of Bootstrap, If it required in your company, you can actually go and read the Bootstrap documentation and work on it.
+
+> **Bootstrap is a course in itself.**
  
 ---
 
-## ☑️ Assignement : Build an entire webpage
+### ☑️ Assignement : Build an entire webpage
