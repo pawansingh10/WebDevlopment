@@ -86,3 +86,40 @@ You can modify your components as per your own wish
 ---
 
 ### ☑️ Assignement : Build an entire webpage
+
+Design a webpage, you should use Bootstrap components as much as you like and there're some requirement for this.<br>
+Here all the knowledge that you have about **Flexbox, Grid, Bootstrap and Custom CSS** all are going to come in handy.<br>
+
+At the very top of it there should be a carousel, How big How small it depends width of the images 500px or whole page, It's up to you. Assume this should take 25% of the webpage. -> Go to bootstrap you will find that there're carousel components up there.<br>
+
+Next is card components, needs to have exactly 3 cards. Cards Should be youtube video thumbnail and should be redirected to watch page.<br>
+
+At the very bootom of It there should  be a footer which says copyright and yourname. Also inject copyright symbol which is using & address of operator like ```<p>&copy;Copyright</p>```
+
+This page needs to be mobile friendly. The best part about the Bootstrap is Bootstrap does their job for their carousel, if we shrink it It will automatically It is mobile optimized, mobile responsive but the Cards are not,bcuz you're putting them. So you have to do that feel free to use flexbox, grid however you want to do that.
+But on the smaller screen screen these 3 cards should not be together, they should stacked up one card above one card above on card.<br>
+
+Also make sure whatever content you're putting on your mobile screen It should be decent on mobile screen as well. You can shrink the font on mobile devices or move copyright on another space and youname bottom of it.
+
+
+```$ tree
+├── Webpage
+│   ├── Carousel
+│   └── 3 Cards
+│   └── Footer
+│
+├── Carousel
+│   ├── image 1
+│   ├── image 2
+│   └── image 3
+│
+├── Cards 
+│   ├── Youtube 1
+│   ├── Youtube 1
+│   └── Youtube 3
+│
+└── Footer
+    └── @Copyrights | 2025
+
+```
+
