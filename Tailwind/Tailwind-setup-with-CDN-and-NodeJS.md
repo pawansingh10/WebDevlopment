@@ -115,4 +115,89 @@ You can see/refer Framework Guides as well so that you can install them.
 
 - Now you can go to your HTML file and start writing Taiwind you will get suggestions are working
 
+> **To setup your Tailwind CSS, You just have to follow the Tailwind CSS website to install it on your machine, You will might have different setup from the last version to new version. So just follow Tailwind Page for installation**
+
+- Turn out, The whole thing about Tailwind CSS, there is nothing magical around it. It's the software which is automatically writing new CSS.
+
+- It looks little bit of difficult at first, but whole community is loving this way of writing, We don't have to leave our HTML. It is so much of advantage when you're writing React and Nextjs and all these libraries really make sense.
+
+---
+
+### 📟 ![LoginAlanWalkerGIF](https://github.com/user-attachments/assets/6889a4f8-6a4e-461c-9e65-734e8b0234f7) Production Ready Login Screen Page
+
+Let's build a project in Tailwind CSS
+Making Project is the best way to learn in computer science!
+
+<img width="1918" height="1022" alt="image" src="https://github.com/user-attachments/assets/81df4010-1aea-4b71-898a-b74c1104a0c0" />
+
+- You can use all of the properties whichever you want go and try.
+
+- Since, There is no attached separated CSS file, what you will notice as we move on to React or something is, That the card you make is your permanent card. You can make your card as component and whenever you wish, you can use it. Not only that if you like the button, you can save this button and now this button will come along with the styling. So wherever you take it and whatever the project you take it, not just file different project.This will behave exactly same if that project is using tailwind, that's why people love tailwind so much in nextjs bcuz there we live in the realm of components. Everything is a component and they travel between the files, between pages, between routes, between projects. You don't have to carry any extra CSS file, you don't have to worry about overwritting your CSS file. You can generate your css file there and all the file that you uses only that much amout of css was generated. Like if somewhere we're using shadow-3xl, It's not generate it twice, It's only generate once. So you're not kind of overburdening your css files.
+
+---
+
+### 🍂 Full potential of Tailwind CSS
+
+Let's do an official tour of Tailwind CSS
+
+- The Power of Tailwind CSS, what it does?
+- Why is it different from Bootstrap?
+   - Now, you'll have realized that Bootstrap actually force us to just use what has been provided by Bootstrap like same color, same width etc
+   - But in Tailwind, there is no restrictions, you can be just your own. You can use different variant of the colors, you can inject your own color scheme as well
+   - Everything is modifiable in Tailwind CSS, That's the beauty about the frameworks and libraries. The better the framework would be considered if it gives you more liberty, more freedom instead of just putting you inside the wall.
+   - Tailwind gives you freedom, whatever you want to use, however you want to use, It's just as a CSS. If you want to overwrite a property you can also do that.
+
+- Why Tailwind is so popular in Developer community?
+- Welcome to official website of [**Tailwind**](https://tailwindcss.com/) which says Rapidly build modern websites without ever leaving your HTML.
+- "Best practices",don't actually work." - Adam Wathan, creator of Tailwind
+- Usually the best practice is considered as keeping your CSS file separate, but turns out It doesn't work on multiple project, too much of overwriting of the CSS as soon as new component comes up specially when you work with 10 different people.
+- What Tailwind does is every component comes with their own styling, there is no overwriting, no fighting between who wins.
+- The cascading rules, the selectors rules in the CSS can be nightmare especially you have to shipped anything into production, you know, the nighmare of fixing of the CSS, a lot of time, functionality is to be ready, and we're just fixing the CSS bugs for weeks that's the reality.
+
+- Go through the docs alots of things to learn, even you can change the version of it. Bcuz the whole industry is using it.Once you get into industry you'll be using tailwind that's why knowing the full potential of tailwind is crucial. Bootstrap is not that mainstream in the industry now.
+
+---
+
+### 🍂 How to build Responsive Design in Tailwind || Crash Course on Responsive Design
+**Mobile First Design** approach, a principle that not only Tailwind but lots of other libraries and UI frameworks follow.
+It's not about just writing the code, There is a approach of writing the code what should be in our mind when we're writing the code.
+
+- [Core Concepts like Utility-First fundamentals](https://v3.tailwindcss.com/docs/utility-first)
+- [ore Concepts](https://tailwindcss.com/docs/styling-with-utility-classes)
+- Hover,Focus and other states
+- Responsive Design
+- Dark Mode
+- Reusing Styles
+- Adding custom styles
+
+- What does it mean by **Responsive Design**?
+   - First of all Tailwind recoomend that there is always width-device meta tag being available, whenever we design our website, It is actually being taken care automatically by the emmet ```<meta name="viewport" content="width=device-width, initial-scale=1.0" />```
+   - There are other more meta tags which are being generated automatically by emmets not only that there're more tags just google them you will find tags like descriptions, authors, etc etc you can provide in your html file so that anybody who is reading your document especially like Browsers and even google can do more stuffs like Indexing, Search Engine Optimizations.
+   - But what is most important is define characters set that we are using ```charset="utf-8"```, what's viewport.
+   - This meta tag ensures that your website loads up initially at 100% label, not too much zoomed in or too much zoomed out. It doesn't do any kind of odd behavior like that.
+ 
+
+- Mobile First Design principle in Tailwind, read docs[https://tailwindcss.com/docs/responsive-design#working-mobile-first] which says that Hey, the whole Tailwind framework is designed with the principle of mobile first that means we want to focus on design websites that looks good on mobile because a lot of people consume on websites on mobile and It's very difficult bcuz the urge to build everything on a big screen first and then move to mobile It turns out not the great approach. You should be design for the mobile first and fix everything that needs to be fixed on the bigger screen and that's where Tailwind comes to the picture.
+- They clearly mentioned Don't use sm: to target mobile devices, because here ```sm``` doesn't means that they are targeting for the mobile screen.This means that I want to write CSS which works above this smaller screen.
+- So, by default whatever the tailwind guideline you're writing that is for mobile screen and then by putting the breakpoint you actually take care of the bigger screen or above screens.
+- writing ```sm: ``` means this should behave after the smaller, when you write ```md: ``` that means It should behave after the medium screen.
+- Always think from mobile perspective whatever you're writing are actually going to be implemented on mobile screen. And if you want to change it on bigger screen then you can target bigger screen.
+
+- Taiwind website is design all for developers but not all developers spent time there.
+
+> Summary : The idea is to  understand the core principles once you understand it, Designing any responsive layout, whether that's a login screen, a pricing page, it's not really that big.
+
+ - **How the Dark Mode works**?
+    - Read docs [Dark Mode](https://tailwindcss.com/docs/dark-mode), they mentioned everything regarding the Dark Mode, It's just a class. ```dark:bg-slate-800```
+      How does it actually works is you need to include few things into your HTML as well to inform HTML that we're going to use dark Mode.This make much morr sense when we will learn react.
+
+ - **Components** : tailwind actually provides you rich set of components, yes there is pricing involve in it but whole a lot of them are absolutely free. In fact almost every single first component is actually free. Example you want to build Pricing section template.
+
+ #### Build a page using the taiwind components which have navigation bar a click section and something CTA section
+ This will give you confidence.
+
+
+
+
+
    
