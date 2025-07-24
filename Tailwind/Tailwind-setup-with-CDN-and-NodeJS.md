@@ -123,9 +123,11 @@ You can see/refer Framework Guides as well so that you can install them.
 
 ---
 
-### 📟 ![LoginAlanWalkerGIF](https://github.com/user-attachments/assets/6889a4f8-6a4e-461c-9e65-734e8b0234f7) Production Ready Login Screen Page
+### 📟 Production Ready Login Screen Page
 
-Let's build a project in Tailwind CSS
+![LoginAlanWalkerGIF](https://github.com/user-attachments/assets/6889a4f8-6a4e-461c-9e65-734e8b0234f7)
+ 
+Let's build a project in Tailwind CSS<br>
 Making Project is the best way to learn in computer science!
 
 <img width="1918" height="1022" alt="image" src="https://github.com/user-attachments/assets/81df4010-1aea-4b71-898a-b74c1104a0c0" />
@@ -196,8 +198,101 @@ It's not about just writing the code, There is a approach of writing the code wh
  #### Build a page using the taiwind components which have navigation bar a click section and something CTA section
  This will give you confidence.
 
+---
+
+### 🍂 Build any layout with Tailwind - Masterclass
+ 
+- This is a crash course to build any layout with just Tailwind and It doesn't involve too much of CSS, once you understand the core hacks of it, That's it.
+
+- UI/UX approach to design Webpages:
+
+- 1. Mobile Screen - More of Vertical Space, in the world of mobile you don't have too much of opions.
+      - people prefer 1 thing at a row
+      - The row itself might contains card, button etc
+      - This is the most common design you will see.
+      - In very rare case, you will sometimes have 2 things in a row
+      - The moment you try to inject 3 in any of the mobile device is not considered as good approach bcuz this is too clumsy for anybody to actually see & visualize
+       
+- 2. Big Screen - More of Horizontal Space, in the world of big screen, content has either take entire row space or should be divided into 2 parts.
+     - On the biggest screen, there is a different ways of analysizing the things, On the bigger screen there are variations.
+     - a) Equal Half
+     - b) Unqual/Non-Equal Half     
+
+- **Equal** : In the Equal section, you'll find something like  which takes Entire row of the screen, rare but might happens
+     - Most usual case in Equal section is Your Screen is going to divide into 2 equal portion of it.
+     - Or your screen is divided into 3 equal parts
+     - Also have screen which takes 4 equal parts
+     - The common thing between all these design is ALL ARE DIVIDED INTO EQUAL PARTS no matter how many sections are.
+
+- **Non Equal** : In non-equal/Unqual section, you'll see there is a row which is divided into 25% and 75% ration, this might flip as well 75% and 25%
+     - They never share equal space and this 25% and 75% is most common one.
+     - small portion big portion and small portion 
+      
+> **On mobile screen the content should take the entire space, at max 2 equal screen, 2 unqual case is very rare, In the mobile for user's best experience  when he can tap on the content in a good width.** So either It's entire row or at max 2 equal half.
+
+- While building the website, see it as Row Perspective first, What goes inside the row is a different perspective altogether.
+- Go and look & scroll any website, you will find this pattern only. [**Tailwind**](https://tailwindcss.com)
+
+
+#### Let's play with tailwind Playground 
+Although We have already did setup our configuration in VS Code but here output is just right to your input file It's much easier to visualize how things are done.
+
+- **HACKS OF DESIGNING ANY LAYOUT**
+
+- Let's remove everthing, Have a div,  inside this inner div give it min-height, rounded corner, shadow, background color.
+- Obviously each div is a block level so it's goes from left to right.
+- But the problems come when you need multiple layout? So Hack or solution is use Grid
+- Grid, Once you do grid It does change nothing at all, where things will change actually is How do you design the things.
+- Hacks: Always think from Bigger screen first! So the breakpoints of Tailwind ```sm:``` means this property will act for all of the screens which are above smaller screen. You say, Hey Tailwind I want on the smaller and above screen I want 2 columns ```grid sm:grid-cols-2 gap-4 m-4``` what happens with, when we say smaller and above so always on the all big screen this's going to divide into 2 equal halves, no matter what you do or put inside them. The moment you go to smaller screen automatically it will automatically grid take place.
+```html
+<div class="m-4 grid gap-4 sm:grid-cols-2">
+  <div class="min-h-[100px] rounded-lg bg-orange-500 shadow"></div>
+  <div class="min-h-[100px] rounded-lg bg-teal-500 shadow"></div>
+</div>
+```
+- If you want to overwrite that automatical default behavior for mobile screen and you want that I also want 2 cols on mobile as well then you have to overwrite by writting ```grid-cols-2```
+```html
+<div class="m-4 grid grid-cols-2 gap-4 sm:grid-cols-2">
+  <div class="min-h-[100px] rounded-lg bg-orange-500 shadow"></div>
+  <div class="min-h-[100px] rounded-lg bg-teal-500 shadow"></div>
+</div>
+```
+
+> 😅 Everybody says Design mobile first, but in the reality, if you'll just work in the production nobody writes for the mobile first. Everybody worry, screen is open up when you're writting code onto Desk! So, **Explicitly write for the bigger screen first**
+
+- The moment you're saying ```grid grid-cols-2``` make sure your inner divs are equally matching that as well.
+
+- Similarly you can do this for 3 cols and also you can explicitly write for smaller screen in defualt but for mobile you don't have to do anything that's the best thing.
+
+```html
+<div class="m-4 grid gap-3 sm:grid-cols-4">
+  <div class="min-h-[100px] rounded-lg bg-orange-500 shadow"></div>
+  <div class="min-h-[100px] rounded-lg bg-teal-500 shadow"></div>
+  <div class="min-h-[100px] rounded-lg bg-red-500 shadow"></div>
+  <div class="min-h-[100px] rounded-lg bg-purple-500 shadow"></div>
+</div>
+```
+- This is the basics of how things would have done whether you have 2-divs 4-divs doesn't matter.
+
+- Now Let's see non-equal section
+   - what should we do to have non-equal sections?, We have to take care about mobile as well and we will.
+   - Now we want to have one portion 25% and other 75%
+
+- We can distribute these columns to inner child based on how many total columns you have.
+- Designers usually like to divide the entire big screen into  12 equal columns and then they distribute the inner child of How much space should be taken by them.
+  This is the very very common techniques
 
 
 
 
-   
+
+
+
+
+
+
+
+
+
+
+
