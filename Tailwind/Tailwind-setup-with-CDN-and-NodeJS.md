@@ -165,7 +165,7 @@ Let's do an official tour of Tailwind CSS
 It's not about just writing the code, There is a approach of writing the code what should be in our mind when we're writing the code.
 
 - [Core Concepts like Utility-First fundamentals](https://v3.tailwindcss.com/docs/utility-first)
-- [ore Concepts](https://tailwindcss.com/docs/styling-with-utility-classes)
+- [Core Concepts](https://tailwindcss.com/docs/styling-with-utility-classes)
 - Hover,Focus and other states
 - Responsive Design
 - Dark Mode
@@ -190,7 +190,7 @@ It's not about just writing the code, There is a approach of writing the code wh
 > Summary : The idea is to  understand the core principles once you understand it, Designing any responsive layout, whether that's a login screen, a pricing page, it's not really that big.
 
  - **How the Dark Mode works**?
-    - Read docs [Dark Mode](https://tailwindcss.com/docs/dark-mode), they mentioned everything regarding the Dark Mode, It's just a class. ```dark:bg-slate-800```
+    - Read docs [Dark Mode](https://tailwindcss.com/docs/dark-mode) they mentioned everything regarding the Dark Mode, It's just a class. ```dark:bg-slate-800```
       How does it actually works is you need to include few things into your HTML as well to inform HTML that we're going to use dark Mode.This make much morr sense when we will learn react.
 
  - **Components** : tailwind actually provides you rich set of components, yes there is pricing involve in it but whole a lot of them are absolutely free. In fact almost every single first component is actually free. Example you want to build Pricing section template.
@@ -278,12 +278,23 @@ Although We have already did setup our configuration in VS Code but here output 
    - what should we do to have non-equal sections?, We have to take care about mobile as well and we will.
    - Now we want to have one portion 25% and other 75%
 
-- We can distribute these columns to inner child based on how many total columns you have.
+- We can distribute these columns to inner child based on how many total columns you have.(How much property parent have only that much distributed among kids)
 - Designers usually like to divide the entire big screen into  12 equal columns and then they distribute the inner child of How much space should be taken by them.
-  This is the very very common techniques
-
-
-
+  This is the very very common technique in the design world.
+```html
+<div class="grid-cols-1 m-4 grid gap-4 sm:grid-cols-12">
+  <div class="sm:col-span-2 min-h-[100px] rounded-lg bg-orange-500 shadow"></div>
+  <div class="sm:col-span-10 min-h-[100px] rounded-lg bg-teal-500 shadow"></div>
+</div>
+```
+```html
+<div class="m-4 grid gap-4 sm:grid-cols-12">
+  <div class="hidden min-h-[100px] rounded-lg bg-orange-500 shadow sm:col-span-2 sm:block"></div>
+  <div class="min-h-[100px] rounded-lg bg-teal-500 shadow sm:col-span-8"></div>
+  <div class="hidden min-h-[100px] rounded-lg bg-purple-500 shadow sm:col-span-2 sm:block"></div>
+</div>
+```
+- The more you build projects using Tailwind CSS, you will get to know more about it.
 
 
 
